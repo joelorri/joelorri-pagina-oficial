@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+<title>Escena Visual</title>
+    <script>
+        $(document).ready(function(){
+            $('section[data-type="parallax_section"]').each(function(){
+                var $bgobj = $(this);
+                $(window).scroll(function() {
+                    $window = $(window);
+                    var ypos = -($window.scrollTop() / $bgobj.data('speed'));
+                    var coords = '100%'+ ypos + 'rem';
+                    $bgobj.css({ backgroundPosition: coords });
+                });
+            });   
+        });
+    </script>
+    <link rel="shortcut icon" href="/EscenaVisual_logo.jpeg">
+</head>
+
+<header>
+        <nav>
+            <div class="menu_barra">
+                <a href="#"class="boto-menu"><span class="icon-menu"></span>menu</a>
+            </div>
+            <a href="#sect1"><span class=""><img id="logo" img src="/logo.png"></a>
+            <ul>
+                <li><a href="#sect1"><span class="icon-home"></span>INICI</a></li>
+
+                <li><a href="#section_2"><span class="icon-megaphone"></span>SOBRE NOSALTRES</a></li>
+
+                <li class="submenu">
+                    <a href="#section_3"><span class="icon-info"></span>QUE FEM?<span class="icona2 icon-triangle-down"></span></a>
+                        <ul class="subm-fill">
+                            <li><a href="#sPART1">COMUNICACIÓ I AUDIOVISUAL</a></li>
+                            <li><a href="#sPART2">SONORITZACIÓ I IL·LUMINACIÓ</a></li>
+                            <li><a href="#sPART3">PLANIFICACIÓ I DISTRIBUCIÓ</a></li>
+                        </ul>
+                </li>
+                <li><a href="#section_4"><span class="icon-camera"></span>HEM TREBALLAT AMB ELS MILLORS ARTISTES</a></li>
+
+                <li><a href="#section_5"><span class="icon-squared-plus"></span>I si parlem?</a></li>
+
+            </ul>
+        </nav>
+</header>
+<body>
+
+<section id="sect1" class="sect">
+
+    <video src="video/pexels-2022395.mp4" autoplay="true" muted="true" loop="true" poster="video/pexels-2022395.mp4"></video>
+    <p class="si"></p>
+    <div>
+        <h2>Nosaltres som</h2>
+        <h1><center>Escena Visual</center></h1>
+    </div>
+</section>
+
+<section class="sect2" id="section_2">
+        <div>
+            <h2>
+                SOBRE NOSALTRES</a>
+            </h2>
+            <h1>
+                TRANSFORMANT ELS ESDEVENIMENTS TOT MIRANT EL FUTUR
+            </h1>
+            <p>
+                Escena Visual neix en el que ha estat el pitjor moment de la història de les empreses d'esdeveniments. La pandèmia de la Covid-19. Hem nascut en un moment en el qual hem necessitat reinventar-nos contínuament i treure el màxim profit de la nostra creativitat.
+Hem nascut amb un pensament i una metodologia de treball moderna, pensant sempre en com seran els esdeveniments del futur.
+Tot i el poc temps de vida, estem formats per un equip humà amb molta experiència en el sector dels esdeveniments i la comunicació.
+Oferim un servei global des del disseny d'esdeveniments, la producció tècnica, la sonorització, la il·luminació, vídeo-streaming , la gestió de xarxes socials i el disseny de campanyes publicitàries als mitjans de comunicació.
+</p>
+        </div>
+</section>
+
+<section class="secti3" id="section_3">
+
+    <video src="video//Vídeo sin título ‐ Hecho con Clipchamp (1).mp4" autoplay="true" muted="true" loop="true" poster="video/pexels-2022395.mp4"></video>
+    <p class="si1"></p>
+    
+    <section class="sect3" id="sPART1">
+        <div>
+            <h2>
+                COMUNICACIÓ I AUDIOVISUAL <img id="s3img" img src="/EscenaVisual_Screen_C2-1.png"></a>
+            </h2>
+            <p>
+                Gestionem xarxes socials d'artistes i empreses. Així com la seva expansió i presència als mitjans. 
+                També produïm continguts audiovisuals i realitzem Streamings en directe.
+            </p>
+        </div>
+    </section>
+
+    <section class="sect32" id="sPART2"> 
+        <div>
+            <h2>
+                SONORITZACIÓ I IL·LUMINACIÓ <img id="s3img" img src="/EscenaVisual_Screen_C3-1.png"></a>
+            </h2>
+            <p>
+                Disposem dels equips de sonorització i il·luminació per a esdeveniments i festivals de tots els formats. També oferim serveis de producció i regidoria
+            </p>
+        </div>
+    </section>
+
+    <section class="sect3"id="sPART3">
+        <div>
+            <h2>
+                PLANIFICACIÓ I DISTRIBUCIÓ <img id="s3img" img src="/EscenaVisual_Screen_C4-1.png"></a>
+            </h2>
+            <p>
+                En Escena visual dissenyem i creem esdeveniments fets a mida. Fem que cada esdeveniment sigui únic i irrepetible, d'aquesta manera som nosaltres
+            </p>
+        </div>
+    </section>
+</section>
+
+<section class="secti4" id="section_4">
+    <div class="sect4">
+
+    <div class="grid">
+        <div> 
+            <h1>SEMPRE AMB ELS MILLORS ARTISTES!</h1>
+    </div>
+    </div>
+
+    <div class="grid js-masonry">
+        <div class="grid-item">
+            <img src="fotos_3/kanye-west.jpg" alt="">
+                <P> Judit Neddermann, és una cantautora catalana,Formà part dels grups de música The Gramophone Allstars, Verd i Blau, Clara Peya, Luzazul i Coetus</P>
+        </div>
+        <div class="grid-item">
+            <img src="fotos_3/Black-Eyed-Peas---Pump-It-.jpg" alt="">
+                <P>Miriam Doblas Muñoz, popularment coneguda com a Lola Índigo, és una cantant i ballarina espanyola.
+                    , va ser la primera expulsada d'Operación Triunfo 2017, Amb el seu primer senzill, «Ja no vull res», va aconseguir la certificació de doble disc de platí el desembre de 2018</P>
+        </div>
+        <div class="grid-item">
+            <img src="fotos_3/Britney_Spears.jpg" alt="">
+                <P>Bombai és un grup valencià format per Javi Fernández (veu principal), Vicente Cervera (guitarra elèctrica) i Ramón García (guitarra acústica). Tots tres van néixer al barri de Monteolivete i van anar junts al col·legi. Tot i que cadascun va provar sort en la música</P>
+        </div>
+        <div class="grid-item">
+            <img src="fotos_3/el-canto-del-loco.jpeg" alt="">
+                <P>Miki Núñez o simplement Miki, és un cantant espanyol que es va donar a conèixer el 2018, quan va formar part de la desena edició d'Operación Triunfo, quedant en sisè lloc.
+
+                    Al gener de 2019, va ser elegit durant la Gala Eurovisió d'OT 2018 per representar Espanya al Festival de la Cançó d'Eurovisió 2019 amb el tema La venda. El 13 de setembre del 2019 va treure el seu primer disc, Amuza, que li va permetre fer la gira "Amuza" per tot el país.</P>
+        </div>
+        <div class="grid-item">
+            <img src="fotos_3/George_Michael.jpg" alt="">
+                <P>Ana Mena és una cantant, actriu i model espanyola,
+                    va debutar a la indústria musical el 2016 amb el seu senzill «No sóc com tu creus»,
+                    
+                    A partir d'aquell moment, la seva carrera va fer un gir radical alternant una sèrie d'èxits que l'han convertit en una de les artistes espanyoles més escoltades de l'era del streaming. Segons casa discogràfica, el 2022 Mena acumula vendes equivalents a un disc de Diamant, quaranta-dos discos de Platino i tres d'Or, principalment entre Itàlia i Espanya.</P>
+        </div>
+        <div class="grid-item">
+            <img src="fotos_3/Jennifer_Lopez.jpg" alt="">
+                <P>Macaco, és un cantant català, La seva música és una barreja de rumba, reggae i funk, En els seus orígens com a músic de carrer, (a les rambles de Barcelona) va reclutar músics de diversos països com Brasil, Camerun, Veneçuela o Espanya, i va arrencar el seu propi projecte multicultural batejant-lo amb el sobrenom: Macaco. Canta en diferents idiomes, com ara l'espanyol, portuguès, francès, anglès, català i italià.</P>
+        </div>
+        <div class="grid-item">
+            <img src="fotos_3/Lady_Gaga.jpg" alt="">
+                <P>Sweet California és un grup femení espanyol actualment integrat per Alba Reig Gilabert, Tamy Nsue Sánchez i Sonia Goméz González. Van ser descobertes per la discogràfica Warner Music Spain i Must! Produccions i actualment compten amb més de 100.000 discos venuts, un MTV EMA a millor artista espanyol, un premi DIAL de l'emissora Cadena DIAL Espanya, 1 discos d'or i dos de platí i d'altres. S'han convertit en la girl band amb més èxit a Espanya</P>
+        </div>
+        <div class="grid-item">
+            <img src="fotos_3/Mariah_Carey.jpg" alt="">
+                <P>Álvaro de Luna és un cantant, compositor de pop-rock espanyol, exvocalista del grup Sinsinati,  supera els 12.000 seguidors a Spotify i es troba a punt de superar la xifra d'1,3 milions d'oients mensuals</P>
+        </div>
+        <div class="grid-item">
+            <img src="fotos_3/Pitbull.jpg" alt="">
+                <P>María Dolores Parrado Àvila (Cadis, Espanya, 28 d'abril de 2001), més coneguda com a María Parrado, és una cantant espanyola de pop, és coneguda per guanyar la primera edició de La Voz Kids España, el 2014.
+                    ha estat nominada per a un Kids' Choice Award 2017 en la categoria «Artista espanyol favorit».
+                    
+                    El 6 de setembre de 2017 es va estrenar al programa Deixa't portar de Cadena Dial el seu nou senzill titulat «Un miracle» amb Antonio José. Va sortir a la venda a plataformes digitals el 8 de setembre.</P>
+        </div>
+        <div class="grid-item">
+            <img src="fotos_3/Maneskin.jpg" alt="">
+                <P>Nil Moliner, és un músic, compositor i cantautor espanyol, va començar la seva carrera musical el 2005, com a cantant i guitarrista de la banda de pop-rock català CyBee, amb la qual va gravar dos discos produïts per Manu Guix i Roger Rodés.
+
+                    el 2017 va començar a gravar el seu primer EP produït, de nou, per Manu Guix i Roger Rodés a Medusa Estudio.
+                    
+                    Soldadet de ferro i El 22 d'octubre s'anuncia el primer Disc de Platí a la cursa de Nil Moliner,
+                    
+                    El 21 de febrer del 2020 el català va llançar el seu àlbum debut Ballant a la batalla, que va arribar al top 2 de discos més venuts a Espanya.</P>
+        </div>
+        <div class="grid-item">
+            <img src="fotos_3/Pablo-alboran.jpg" alt="">
+                <P>Paty Cantú, és una cantant, actriu i compositora mexicana. Després d'abandonar el grup Lu decideix llançar la seva carrera com a solista
+                    Ha estat guanyadora de diferents reconeixements com els Premis MTV Llatinoamèrica per millor artista nou el 2009, els MTV Europe Music Awards per millor artista llatinoamericà el 2013 i el premi de la Societat d'Autors i Compositors de Mèxic per la seva trajectòria i composició. També ha estat nominada tres vegades als Premis Telehit, dues vegades als Premis Oye!, i cinc vegades als Nickelodeon Kids' Choice Awards Mèxic.
+                </P>
+        </div>
+        <div class="grid-item">
+            <img src="fotos_3/Pet-Shop-Boys.jpg" alt="">
+                <P>Beatriz Luengo és una compositora, cantant, autora, actriu, ballarina i empresària espanyola, Guanyadora de dos Grammy llatins,
+                    coneguda principalment a Espanya, Portugal, França, Itàlia i Llatinoamèrica pel seu treball discogràfic i la seva participació en sèries com Un paso adelante.
+                    
+                    És directora de la seva pròpia escola de dansa a Madrid. Va ser nominada al Grammy Llatí el 2012 i 2018 amb els seus dos últims àlbums al Millor Àlbum Pop Contemporani, i és guanyadora del Grammy Americà per escriure el disc A qui vulgui escoltar de Ricky Martin.​</P>
+        </div>
+        <div class="grid-item">
+            <img src="fotos_3/djenka.jpeg" alt="">
+                <P> Dj Enka,
+                    des de molt petita va començar a interessar-se pel món del discjòquei i de la música. Va ser l'any 1998, on va tenir la seva primera residència i experiència a una Sala del Vallès Oriental. A partir d'aquí va anar adquirint coneixements Va ser a partir del 2014 quan va decidir dedicar-se a la producció musical, juntament amb Daniel Trim. Va ser el 2014 quan va publicar el primer track de la mà de Rostermusic. Les seves majors actuacions han estat com a dj resident de llarga durada, tocant diversos estils, treballant amb tot tipus de públic i edats. Fent-ne un valor segur per a l'empresari. Col·laboradora d'emissores de ràdio com Flaix Fm, KickFm, MàximaFm, Els 40Dance entre d'altres</P>
+        </div>
+    </div>
+    <script>
+        var elem = document.querySelector('.grid');
+            var msnry = new Masonry( elem, {
+              // options
+            itemSelector: '.grid-item',
+            columnWidth:'.grid-item'
+            });
+            
+            // element argument can be a selector string
+            //   for an individual element
+            var msnry = new Masonry( '.grid', {
+              // options
+            });
+    </script>
+</section>
+
+<section class="noticia" id="section_5">
+
+        <div class="noticia">
+            <div class="titol">
+                
+                <p class="lorem">I si parlem? </p>
+                </div>
+                <div class="info">
+                    <p class="missg">Sigui quina sigui la teva idea, parlem-ne! T'ajudarem i ens implicarem per tal de fer-la realitat! </p>
+            
+            </div>
+        </div>
+        <div class="noticia">
+            <div class="titol">
+                
+                <p class="lorem">PER WHATSAPP</p>
+                </div>
+                <div class="info">
+                    <p class="missg">+34 621 28 01 96</p>
+            
+            </div>
+        </div>
+        <div class="noticia">
+            <div class="titol">
+                
+                <p class="lorem">EMAIL</p>
+                </div>
+                <div class="info">
+                    <p class="missg">info@evisual.cat</p>
+            
+            </div>
+        </div>
+    </div>
+
+    <script>
+    $(document).ready(function(){
+    $(document).ready(function()
+    {
+        $('.info').toggle("slow");
+        $(".noticia").click(function (){
+            $(this).children('.info').slideToggle(500);
+            //$(this).children('.info').toggle(500);
+        });
+    })
+    });
+    </script>
+
+</section>
+<section id="seccio6" data-type="parallax_section" data-speed="15">
+    <article>
+        <div class="tarty">
+    <div class="slider">
+        <ul>
+            <li><img src="/fotos_slider/WhatsApp Image 2023-02-05 at 20.57.53 (1).jpeg"></li>
+            <li><img src="/fotos_slider/WhatsApp Image 2023-02-05 at 20.57.53.jpeg"></li>
+            <li><img src="/fotos_slider/WhatsApp Image 2023-02-05 at 20.57.54 (1).jpeg"></li>
+            <li><img src="/fotos_slider/WhatsApp Image 2023-02-05 at 20.57.54.jpeg"></li>
+            <li><img src="/fotos_slider/WhatsApp Image 2023-02-05 at 20.57.56.jpeg"></li>
+        </ul>
+    </div>
+    </div>
+    </article> 
+</section>
+</body>
+</html>

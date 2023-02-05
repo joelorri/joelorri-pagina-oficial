@@ -1,0 +1,563 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+                                                        /* Menu */
+body{
+    background-color: white;
+}
+
+img#logo{
+    background-color: transparent;
+    float: left;;
+    width: auto;
+    height: 40px;
+    margin: 10px;
+}
+.menu_barra{
+    
+    /*display:block;*/
+    display: none;
+    
+}
+header{
+    background-color: white;
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+}
+header nav{
+    background: #ffffff;
+    z-index: 1000;
+
+}
+header nav ul{
+
+    list-style: none;
+}
+header nav ul li{
+    display:inline-block;
+    position: relative;
+}
+header nav ul li a{
+    color:#00245A;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+}
+header nav ul li span{
+    margin-right: 10px;
+}
+header nav ul li:hover{
+    background: #00245A;
+}
+header nav ul li:hover a{
+    color: white;
+} 
+
+header nav ul li .subm-fill{
+    background-color:#00245A ;
+    position: absolute;
+    display: none;
+    width: 150%;
+    z-index: 1000;
+}
+header nav ul li .subm-fill li{
+    display: block;
+    overflow: hidden;
+}
+header nav ul li .subm-fill li a{
+    display: block;
+    text-align: left;
+}
+header nav ul li .subm-fill li a span{
+    float: right;
+    position: relative;
+    margin-left: 10px;
+}
+header nav ul li:hover .subm-fill{
+    display: block;
+}
+                                            /* Mediaquerry */
+@media screen and (max-width:800px){
+    body{
+        padding-top: 60px;
+        }
+    .menu_barra{
+        right: 0;
+        width: 100%;
+        height: 60px;
+        background: white;
+        display: block;
+        position: fixed;
+        top:0
+        }
+    .menu_barra .boto-menu{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding: 40px;
+        color: #00245A;
+        font-size: 25px;
+        z-index: 1;
+        }
+    .menu_barra span{
+        float: right;
+        font-size: 40px;
+    }
+    header nav{
+        width: 40%;
+        display: block;
+        position: fixed;
+        overflow: hidden;
+        right: 100%;
+    }
+    header nav ul li{
+        display: block;
+        border-bottom: 1px solid white;
+    }
+    header nav ul li a{
+        display: block;
+    }
+    header nav ul li .subm-fill{
+        width: 100%;
+        position: relative;
+        /*display:block*/
+    }
+    header nav ul li .subm-fill li a{
+        margin-left: 20px;
+    }
+    header nav ul li .icona2{
+        float:right;
+    }
+    img#logo{
+        display: none;
+    }
+    video {
+        object-fit: cover;
+    }
+    img#foto{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    }
+    #section_2 {
+        text-align: center;
+        }
+    #section_3{
+        text-align: center;
+    }
+    .sect3 div p{
+        margin-left: 20px;
+        text-align: center;
+    }
+    .sect3 div h2{
+        text-align: center;
+    }
+    .sect32 div h2{
+        text-align: center;
+        font-size: 40px;
+    }
+    .sect32 div p{
+        margin-right: 20px;
+        margin-left: 30px;
+        text-align: center;
+    }
+
+    img#s3img{
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+    }
+    .sect4 div h1{
+        margin-left: 20px;
+        text-align: center;   
+        
+    }
+    .sect4 div p{
+    padding: left;
+        text-align: center;
+    }
+    video {
+        display: block;
+    }
+
+    
+}
+body{
+        background-image: linear-gradient(125deg
+        ,#587a76,#96579d, #6d549c, #b63838,
+        #7f6e0c, #7b5317);
+        background-size: 999%;
+        animation: fanimado 12s infinite;
+        background-position: center center;
+        height: calc(90vh - 79px);
+    }
+    @keyframes fanimado {
+        0%{
+            background-position: 0% 50%;
+        }
+        50%{
+            background-position: 100% 50%;
+        }
+        100%{
+            background-position: 0% 50%;
+        } 
+    }
+                                        /* seccio_1 */
+    .sect {
+        width: 100%;
+        height: 870px;
+    }
+    #sect1{
+        background-color: #00245a84;
+        color: #fff;
+        position: relative;
+        overflow: hidden;
+        
+    }
+    video {
+        padding: auto;
+        position: absolute;
+        height: 100%;
+        z-index: -1;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+    #sect1 h1 {
+        inset: auto;
+        margin: 0;
+        padding-top: 2rem;
+        font-size: 60px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #sect1 h2 {
+        margin: 0;
+        padding-top: 300px;
+        text-align:center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .centrat{
+        text-align:center; 
+        padding:8px;
+        font-family: "Segoe IU", sans-serif;
+    
+    }
+
+    .si{
+        margin-top: 10px;
+    }
+
+    img#fons{
+        
+        padding: auto;
+        position: relative;
+        height: 100%;
+        z-index: -1;
+        object-fit: cover;
+        width: 100%;
+        height: 800px;
+        margin: auto;
+
+    }
+
+
+/* Seccio dos */
+    #section_2 {
+        box-shadow: 1 0 50px rgba(0,0,0,0.8);
+        background-color:#00245a84;
+        
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    #section_2 div h2{
+        color: #fff;
+        margin: 0;
+        float: left;
+        padding-top:100px ;
+        padding-left: 30px;
+        text-align:center;
+        font-size: 60px;    
+        
+    }
+    #section_2 div h1{
+        
+        color: #fff;
+        padding-right: 30px;
+        padding-top: 190px ;
+        padding-left: 30px;
+        font-size: 30px;
+        text-align: left;
+    }
+    #section_2 div p{
+        
+        padding-right: 30px;
+        color: #fff;
+        padding-top:10px ;
+        padding-left: 30px;
+        font-size: 19px;
+        text-align: justify;
+        padding-bottom: 380px;
+    }
+    img#s2img{
+        background-color: transparent;
+        float: right;
+        width: 90px;
+        height: 90px;
+        margin: 0px;
+    }
+
+
+    
+/* section_3 */
+.secti3 {
+    width: 100%;
+    height: auto;
+}
+#section_3{
+    background-color: #51348ae1;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    
+}
+video {
+    padding: auto;
+    position: absolute;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+#comun{
+    float: left;
+}
+#section_3 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+                    /* sect3 */
+.sect3 div h2{
+    color: #fff;
+    margin: 0;
+    float: right;
+    padding-top: 30px;
+    padding-left: auto;
+    padding-right: 30px;
+    text-align: center;
+    font-size: 30px;   
+    
+}
+.sect3 div p{
+    float: right;
+    padding-left: auto;
+    padding-right: 30px;
+    color: #fff;
+    padding-top: 20px;
+    font-size: 19px;
+    text-align: justify;
+    padding-bottom: 150px;
+}
+
+img#s3img{
+    background-color: transparent;
+    float: left;
+    width: 90px;
+    height: 90px;
+    margin: 0px;
+}
+                        /* sect32 */
+.sect32 div h2{
+    color: #fff;
+    margin: 0;
+    float: left;
+    padding-left: auto;
+    padding-right: 30px;
+    text-align: center;
+    font-size: 30px;   
+    
+}
+.sect32 div p{
+    float: left;
+    padding-left: auto;
+    padding-right: 30px;
+    color: #fff;
+    padding-top: 20px;
+    font-size: 19px;
+    text-align: justify;
+    padding-bottom: 150px;
+}
+
+                                        /* Seccio 4 */
+.sect4 div h1{
+    color: #fff;
+    margin: 0;
+    float: left;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 50px;  
+    text-align: justify;  
+    display: block;
+    
+}
+.gird{
+    width: 100%;
+    background: white;
+    z-index: 5;
+}
+.grid-item{
+    width: calc( (100% - 100px) /5);
+    float: right;
+    padding: 10px;
+    box-shadow: 0 2px 4px 0 #00245ae1;
+}
+.grid-item p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    text-align: justify;
+}
+.grid-item img{
+    width: 100%;
+}
+
+@media (max-width:800px){
+    .grid-item{
+        /*width:45%; */
+        width: calc( (100% -50px ) / 3);;
+    }
+}
+@media (max-width:600px){
+    .grid-item{
+        width: calc( (100% -30px ) / 2);;
+    }
+}
+
+#section_5{
+    background-color: rgb(141, 0, 117);
+    margin-top: 200px;
+    margin-bottom: 100px;
+    display: block;
+}
+
+                    /* seccio_5 */
+.noticia{
+    margin-top: 100px;
+    margin:auto;
+    width: auto;
+    min-height: 50PX;
+    background-color: green;
+}
+.titol{
+    overflow: hidden;
+    width: auto;
+    min-height: 50PX;
+    background-color: rgb(255, 255, 255);
+}
+.lorem{
+    text-align: center;
+    margin: 15px;
+    color:#00245A;
+}
+
+.info{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    max-height: 0px;
+    background-color: white;
+}
+.missg{
+    margin: 20px;
+    text-align: justify;
+    color: #00245A;
+}
+.noticia:hover .info{
+    height: auto;
+    cursor: pointer;
+    max-height: 300px;
+    transition: max-height 0.5s;
+}
+.noticia div h1{
+    color: #fff;
+    margin: 0;
+    float: left;
+    padding-top:500px ;
+    padding-left: 30px;
+    text-align:center;
+    font-size: 60px;    
+    
+}
+
+                    /* slidder */
+
+    .slider{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    overflow: hidden;
+
+    }
+    .slider ul{
+    padding: 0;
+    display: flex;
+    width: 500%;
+    animation: canvi 16s infinite;
+    padding: 0;
+    animation-direction: alternate ;
+    animation-timing-function: linear;
+    }
+    .slider ul li{
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    }
+    @keyframes canvi {
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+    }
+    .slider ul li img{
+    width: 100%;
+    }
+
+
+    #seccio6{
+        background: url(/pano/Disseny\ sense\ títol.jpg) 0;
+        
+    }
+
+    
+    #seccio6{
+        margin: 0px ;
+        width: auto;
+        height: 580px;
+        position: relative;
+        width: 100%;
+        background-size: cover;
+    }
+    #seccio6{
+        box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    }
+    .tarty{
+        
+        display: block;
+        background-color: rgba(160,0,20,0.8);
+        border-radius: 10px;
+        height: 300px;
+        width: 300px;
+        padding: 15px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
